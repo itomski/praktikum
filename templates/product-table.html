@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Beschreibung</th>
+            <th scope="col">Menge</th>
+            <th scope="col">preis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php foreach($products as $p) { ?>
+        <tr>
+            <td><?php echo $p['id'] ?></td>
+            <td><?php echo $p['name'] ?></td>
+            <td><?php echo $p['description'] ?></td>
+            <td><?php echo $p['amount'] ?></td>
+            <td><?php echo $p['price'] ?></td>
+        </tr>
+        <?php } ?>
+      </tbody>
+</table>
